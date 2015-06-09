@@ -79,7 +79,7 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-Brads-Mac-Pro.local              git=ANY
-Brads-MacBook-Pro.local          git=ANY
+hackintosh                      git=ANY
+macbook                         git=ANY
 [endhosts]
 

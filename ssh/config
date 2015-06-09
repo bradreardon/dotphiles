@@ -17,6 +17,12 @@ HashKnownHosts no
 #Host hostname hostname.fqdn.com
 #    Hostname hostname.fqdn.com
 
+Host hackintosh
+    Hostname Brads-Mac-Pro.local
+
+Host macbook
+    Hostname Brads-MacBook-Pro.local
+
 # Default
 Host *
     #User username
