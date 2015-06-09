@@ -63,7 +63,7 @@ screen/screenrc
 #task/taskrc
 #tmux/tmux.conf
 #tmux/tmuxinator
-#vim/dotvim:.vim
+vim/dotvim:.vim
 vim/vimrc
 #vim/gvimrc
 #wget/wgetrc
