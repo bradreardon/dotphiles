@@ -10,11 +10,10 @@
 # Dont read global configs
 unsetopt GLOBAL_RCS
 
-# Set the path to dotzsh.
-export DOTZSH="$HOME/.zsh"
+# Set the path to oh-my-zsh.
+export ZSH="$HOME/.oh-my-zsh"
 
-# Source environment settings
-source "$DOTZSH/env.zsh"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Customize to your needs...
 

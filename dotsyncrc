@@ -68,11 +68,11 @@ vim/vimrc
 #vim/gvimrc
 #wget/wgetrc
 #zsh/fasdrc
-#zsh/dotzsh:.zsh
-#zsh/zlogin
-#zsh/zlogout
-#zsh/zprofile
-#zsh/zshenv
+zsh/oh-my-zsh:.oh-my-zsh
+zsh/zlogin
+zsh/zlogout
+zsh/zprofile
+zsh/zshenv
 zsh/zshrc
 [endfiles]
 
