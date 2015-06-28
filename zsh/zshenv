@@ -18,3 +18,5 @@ export PATH=$HOME/bin:$HOME/.dotfiles/dotsync/bin:/usr/local/bin:$PATH
 # Customize to your needs...
 
 export DSHOST="`hostname -s`.local"
+
+export WORKON_HOME=~/.virtualenvs
