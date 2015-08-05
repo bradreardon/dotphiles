@@ -8,7 +8,7 @@
 #
 
 # Global Settings
-ForwardAgent yes
+#ForwardAgent yes
 #VisualHostKey yes
 HashKnownHosts no
 #ConnectTimeout 2
