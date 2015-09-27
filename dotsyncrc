@@ -19,6 +19,7 @@
 # Uncomment examples below
 dotsyncrc
 #ack/ackrc
+ansible/ansible.cfg
 #aptitude
 #bin:bin
 #ctags/ctags
