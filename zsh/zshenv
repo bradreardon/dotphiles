@@ -22,3 +22,4 @@ export PATH=$HOME/bin:$HOME/.dotfiles/dotsync/bin:/usr/local/bin:$PATH
 export DSHOST="`hostname -s`.local"
 
 export WORKON_HOME=~/.virtualenvs
+export ANSIBLE_CONFIG=~/.ansible.cfg
