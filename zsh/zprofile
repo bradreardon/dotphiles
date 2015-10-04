@@ -10,3 +10,21 @@
 
 # Customize to your needs...
 
+alias cs1331="cd ~/Google\ Drive/Georgia\ Tech/Classes/CS\ 1331/Workspace"
+alias sshprx="ssh -F ~/.ssh/config.proxy"
+
+cdf() {
+    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    if [ "$target" != "" ]; then
+        cd "$target"; pwd
+    else
+        echo 'No Finder window found' >&2
+    fi
+}
+
+ppcat() {
+    local out colored
+    out=$(/bin/cat $@)
+    colored=$(echo $out | pygmentize -f console -g 2>/dev/null)
+    [[ -n $colored ]] && echo "$colored" || echo "$out"
+}

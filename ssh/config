@@ -8,7 +8,7 @@
 #
 
 # Global Settings
-ForwardAgent yes
+#ForwardAgent yes
 #VisualHostKey yes
 HashKnownHosts no
 #ConnectTimeout 2
@@ -25,12 +25,7 @@ Host macbook
 
 # Default
 Host *
-    #User username
     StrictHostKeyChecking ask
     ServerAliveCountMax 6
     ServerAliveInterval 30
     KeepAlive yes
-    ControlMaster auto
-    ControlPath ~/.ssh/master/%r@%h:%p
-    ControlPersist 8h
-
