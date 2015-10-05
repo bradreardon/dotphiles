@@ -65,6 +65,7 @@ ssh
 #tmux/tmux.conf
 #tmux/tmuxinator
 vim/vimrc
+vim/dotvim:.vim
 #wget/wgetrc
 #zsh/fasdrc
 zsh/oh-my-zsh:.oh-my-zsh
