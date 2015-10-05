@@ -11,7 +11,10 @@
 # Customize to your needs...
 
 alias cs1331="cd ~/Google\ Drive/Georgia\ Tech/Classes/CS\ 1331/Workspace"
+alias pwp="cd ~/Projects/DUO/pathwright_provisioning/pathwright"
 alias sshprx="ssh -F ~/.ssh/config.proxy"
+alias vssh="vagrant ssh -p -- -l cbweb"
+alias vscreen="vagrant ssh -p -- -l cbweb -t screen -dr"
 
 cdf() {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
