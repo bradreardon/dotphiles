@@ -10,7 +10,7 @@
 project_name: dotphiles
 project_root: ~/.dotfiles
 socket_name: dotphiles # Not needed.  Remove to use default socket
-tabs:
+windows:
   - editor:
       layout: even-horizontal
       panes:

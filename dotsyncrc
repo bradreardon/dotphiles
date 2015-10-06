@@ -62,8 +62,8 @@ ssh
 #subversion
 #task/task
 #task/taskrc
-#tmux/tmux.conf
-#tmux/tmuxinator
+tmux/tmux.conf
+tmux/tmuxinator
 vim/vimrc
 vim/dotvim:.vim
 #wget/wgetrc

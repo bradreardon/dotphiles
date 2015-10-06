@@ -23,3 +23,9 @@ export DSHOST="`hostname -s`.local"
 
 export WORKON_HOME=~/.virtualenvs
 export ANSIBLE_CONFIG=~/.ansible.cfg
+
+export PAGER="less"
+export EDITOR="vim"
+export VISUAL="vim"
+
+export DISABLE_AUTO_TITLE=true

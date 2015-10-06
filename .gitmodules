@@ -64,3 +64,9 @@
 [submodule "vim/dotvim/bundle/vim-buffergator"]
 	path = vim/dotvim/bundle/vim-buffergator
 	url = git@github.com:jeetsukumaran/vim-buffergator.git
+[submodule "vim/dotvim/bundle/tslime.vim"]
+	path = vim/dotvim/bundle/tslime.vim
+	url = git@github.com:jgdavey/tslime.vim.git
+[submodule "vim/dotvim/bundle/vim-tmux-navigator"]
+	path = vim/dotvim/bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
