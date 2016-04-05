@@ -24,6 +24,9 @@ set number
 set list listchars=tab:»·,trail:·
 au FocusLost * :wa
 
+" Misc. Mappings
+noremap <Tab> ^==<Esc>
+
 " CtrlP
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
@@ -93,8 +96,6 @@ endif
 
 " ag.vim
 let g:ag_working_path_mode="r"
-
-
 
 " cmd n, cmd p for fwd/backward in search
 map <C-n> :cn<CR>

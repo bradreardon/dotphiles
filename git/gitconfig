@@ -11,6 +11,7 @@
 [user]
     name = "Brad Reardon"
     email = "brad.jay.reardon@gmail.com"
+	signingkey = 8EC2E3BA
     #signingkey = **Your GPG ID**
 
 [branch "master"]
@@ -146,3 +147,5 @@
 [url "git@github.com:"]
     insteadof = github:
 
+[commit]
+	gpgsign = true

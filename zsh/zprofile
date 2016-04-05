@@ -10,11 +10,14 @@
 
 # Customize to your needs...
 
-alias cs1331="cd ~/Google\ Drive/Georgia\ Tech/Classes/CS\ 1331/Workspace"
+alias cs1332="cd ~/Google\ Drive/Georgia\ Tech/Classes/CS\ 1332"
 alias pwp="cd ~/Projects/DUO/pathwright_provisioning/pathwright"
 alias sshprx="ssh -F ~/.ssh/config.proxy"
 alias vssh="vagrant ssh -p -- -l cbweb"
 alias vscreen="vagrant ssh -p -- -l cbweb -t screen -dr"
+alias checkstyle="java -jar ~/bin/checkstyle-6.14.1-all.jar -c ~/bin/CS1332-checkstyle.xml"
+alias v="vagrant"
+alias pwup="osascript ~/bin/pwup.applescript"
 
 cdf() {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
@@ -31,3 +34,8 @@ ppcat() {
     colored=$(echo $out | pygmentize -f console -g 2>/dev/null)
     [[ -n $colored ]] && echo "$colored" || echo "$out"
 }
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
