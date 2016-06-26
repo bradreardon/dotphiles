@@ -22,6 +22,11 @@ export PATH=$HOME/bin:$HOME/.dotfiles/dotsync/bin:/usr/local/bin:$PATH
 export DSHOST="`hostname -s`.local"
 
 export WORKON_HOME=~/.virtualenvs
+export PROJECT_HOME=~/Projects/Personal
+export GOPATH=~/Projects/Go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 # export ANSIBLE_CONFIG=~/.ansible.cfg
 # export ANSIBLE_SSH_ARGS="-F ~/.ssh/config.proxy"
 

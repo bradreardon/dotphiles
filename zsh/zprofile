@@ -12,12 +12,9 @@
 
 alias cs1332="cd ~/Google\ Drive/Georgia\ Tech/Classes/CS\ 1332"
 alias pwp="cd ~/Projects/DUO/pathwright_provisioning/pathwright"
-alias sshprx="ssh -F ~/.ssh/config.proxy"
 alias vssh="vagrant ssh -p -- -l cbweb"
 alias vscreen="vagrant ssh -p -- -l cbweb -t screen -dr"
-alias checkstyle="java -jar ~/bin/checkstyle-6.14.1-all.jar -c ~/bin/CS1332-checkstyle.xml"
-alias v="vagrant"
-alias pwup="osascript ~/bin/pwup.applescript"
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 cdf() {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`

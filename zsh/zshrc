@@ -11,7 +11,7 @@ DISABLE_AUTO_UPDATE="true"
 
 ZSH_THEME="agnoster"
 
-plugins=(git adb bower brew common-aliases command-not-found cp django gitignore history osx pip python sudo vagrant zsh_reload)
+plugins=(git adb bower brew common-aliases command-not-found cp django gitignore history osx pip python sudo vagrant virtualenvwrapper zsh_reload)
 
 DEFAULT_USER="bradreardon"
 
