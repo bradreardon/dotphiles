@@ -25,3 +25,4 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 fi
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+export PATH="/usr/local/opt/node@6/bin:$PATH"

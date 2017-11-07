@@ -25,6 +25,7 @@ export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=~/Projects/Personal
 export GOPATH=~/Projects/Go
 export GOBIN=$GOPATH/bin
+export GRADLE_HOME=~/Library/gradle
 export PATH=$PATH:$GOBIN
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 # export ANSIBLE_CONFIG=~/.ansible.cfg
@@ -35,3 +36,6 @@ export EDITOR="vim"
 export VISUAL="vim"
 
 export DISABLE_AUTO_TITLE=true
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
