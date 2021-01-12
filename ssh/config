@@ -29,3 +29,8 @@ Host *
     ServerAliveCountMax 6
     ServerAliveInterval 30
     KeepAlive yes
+
+Host git-codecommit.*.amazonaws.com
+  User APKAIWEVQNUJZUEASY3A
+  IdentityFile ~/.ssh/id_rsa
+

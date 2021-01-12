@@ -10,8 +10,10 @@
 
 # Customize to your needs...
 
-alias pwp="cd ~/Projects/DUO/pathwright_provisioning/pathwright"
+alias pwp="cd ~/pathwright_provisioning"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias ic="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
+alias pwsh='f() { kubectl -n pw-$1 get pod | awk '"'"'/backend-backend/{ print $1; exit; }'"'"' | xargs -J {} -o kubectl -n pw-$1 exec -it {} /bin/bash };f'
 
 ppcat() {
     local out colored
@@ -19,10 +21,3 @@ ppcat() {
     colored=$(echo $out | pygmentize -f console -g 2>/dev/null)
     [[ -n $colored ]] && echo "$colored" || echo "$out"
 }
-
-# Setting PATH for Python 3.5
-# The orginal version is saved in .zprofile.pysave
-# PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-# export PATH
-
-eval $(/opt/homebrew/bin/brew shellenv)

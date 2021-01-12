@@ -1,2 +1,0 @@
-Host *
-	ProxyCommand ssh odin.br-lan.xyz -W %h:%p

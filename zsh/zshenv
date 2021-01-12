@@ -21,7 +21,9 @@ export PATH=$HOME/bin:$HOME/.dotfiles/dotsync/bin:/usr/local/bin:$PATH
 
 export DSHOST="`hostname -s`.local"
 
-export WORKON_HOME=~/.virtualenvs
+# zsh handles this
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export WORKON_HOME=~/.venv
 export PROJECT_HOME=~/Projects/Personal
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
@@ -32,3 +34,7 @@ export VISUAL="vim"
 export DISABLE_AUTO_TITLE=true
 
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
+
+export GITHUB_USERNAME=bradreardon
+export PW_PROVISIONING_DIR=/Users/bradreardon/pathwright_provisioning
+export DOCKER_BUILDKIT=1

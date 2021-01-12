@@ -19,3 +19,16 @@ data.location=~/.task
 curses=on
 # Color theme
 include ~/.task/colors/dark-16.theme
+uda.reviewed.type=date
+uda.reviewed.label=Reviewed
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns=uuid
+report._reviewed.sort=reviewed+,modified+
+report._reviewed.filter=( reviewed.none: or reviewed.before:now-1week ) and ( +PENDING or +WAITING )
+
+taskd.certificate=~/.dotfiles/task/sync_certs/private.certificate.pem
+taskd.key=~/.dotfiles/task/sync_certs/private.key.pem
+taskd.ca=~/.dotfiles/task/sync_certs/ca.cert.pem
+taskd.server=taskwarrior.inthe.am:53589
+taskd.credentials=inthe_am/brad.jay.reardon/be9ea070-c14f-4591-bb6f-797f04e3ba9f
+taskd.trust=ignore hostname
