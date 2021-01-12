@@ -23,15 +23,12 @@ export DSHOST="`hostname -s`.local"
 
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=~/Projects/Personal
-export GOPATH=~/Projects/Go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-# export ANSIBLE_CONFIG=~/.ansible.cfg
-# export ANSIBLE_SSH_ARGS="-F ~/.ssh/config.proxy"
 
 export PAGER="less"
 export EDITOR="vim"
 export VISUAL="vim"
 
 export DISABLE_AUTO_TITLE=true
+
+export PYTHON_CONFIGURE_OPTS="--enable-framework"

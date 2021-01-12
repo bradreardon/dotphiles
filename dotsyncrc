@@ -81,5 +81,7 @@ zsh/zshrc
 [hosts]
 Brads-iMac.local                git=NONE
 Brads-MacBook-Pro.local         git=Brads-iMac.local
+MacBook-Pro.localdomain		git=NONE
+
 [endhosts]
 

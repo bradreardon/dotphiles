@@ -10,20 +10,8 @@
 
 # Customize to your needs...
 
-alias cs1332="cd ~/Google\ Drive/Georgia\ Tech/Classes/CS\ 1332"
 alias pwp="cd ~/Projects/DUO/pathwright_provisioning/pathwright"
-alias vssh="vagrant ssh -p -- -l cbweb"
-alias vscreen="vagrant ssh -p -- -l cbweb -t screen -dr"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
-
-cdf() {
-    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-    if [ "$target" != "" ]; then
-        cd "$target"; pwd
-    else
-        echo 'No Finder window found' >&2
-    fi
-}
 
 ppcat() {
     local out colored
@@ -34,5 +22,7 @@ ppcat() {
 
 # Setting PATH for Python 3.5
 # The orginal version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
+# PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+# export PATH
+
+eval $(/opt/homebrew/bin/brew shellenv)
