@@ -11,7 +11,7 @@ DISABLE_AUTO_UPDATE="true"
 
 ZSH_THEME="agnoster"
 
-plugins=(git adb bower brew common-aliases command-not-found cp django gitignore history osx pip python sudo vagrant virtualenvwrapper zsh_reload)
+plugins=(git adb bower brew common-aliases command-not-found cp django gitignore history osx pip python sudo vagrant zsh_reload)
 
 DEFAULT_USER="bradreardon"
 
@@ -20,9 +20,16 @@ source "$ZSH/oh-my-zsh.sh"
 
 ### Customize to your needs...
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-	source /usr/local/bin/virtualenvwrapper.sh
-fi
+#if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+#	source /usr/local/bin/virtualenvwrapper.sh
+#fi
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 export PATH="/usr/local/opt/node@6/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+eval "$(pyenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

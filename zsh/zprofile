@@ -10,23 +10,11 @@
 
 # Customize to your needs...
 
-alias gt="cd ~/Google\ Drive/Georgia\ Tech/Classes"
-alias pwp="cd ~/Projects/DUO/pathwright_provisioning/pathwright"
-alias pwgql="cd ~/Projects/DUO/pathwright/packages/pathwright-graphql"
-alias vssh="vagrant ssh -p -- -l cbweb"
-alias vscreen="vagrant ssh -p -- -l cbweb -t screen -dr"
+alias gt="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Library/School/Semesters"
+alias pwp="cd ~/Projects/DUO/pathwright_provisioning"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
-alias mdb="mongod --config /usr/local/etc/mongod.conf"
 alias ic="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
-
-cdf() {
-    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-    if [ "$target" != "" ]; then
-        cd "$target"; pwd
-    else
-        echo 'No Finder window found' >&2
-    fi
-}
+alias pwsh='f() { kubectl -n pw-$1 get pod | awk '"'"'/backend-backend/{ print $1; exit; }'"'"' | xargs -J {} -o kubectl -n pw-$1 exec -it {} /bin/bash };f'
 
 ppcat() {
     local out colored
@@ -35,22 +23,7 @@ ppcat() {
     [[ -n $colored ]] && echo "$colored" || echo "$out"
 }
 
-## Setting PATH for Python 3.5
-# The orginal version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
+use-docker-lab() {
+    export DOCKER_HOST="tcp://10.1.1.61:2375"
+}
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
-
-# Pinentry + gpg-agent
-#if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
-#  source ~/.gnupg/.gpg-agent-info
-#  export GPG_AGENT_INFO
-#  GPG_TTY=$(tty)
-#  export GPG_TTY
-#else
-#  eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
-#fi

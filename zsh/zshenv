@@ -21,15 +21,10 @@ export PATH=$HOME/bin:$HOME/.dotfiles/dotsync/bin:/usr/local/bin:$PATH
 
 export DSHOST="`hostname -s`.local"
 
-export WORKON_HOME=~/.virtualenvs
+# zsh handles this
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export WORKON_HOME=~/.venv
 export PROJECT_HOME=~/Projects/Personal
-export GOPATH=~/Projects/Go
-export GOBIN=$GOPATH/bin
-export GRADLE_HOME=~/Library/gradle
-export PATH=$PATH:$GOBIN
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-# export ANSIBLE_CONFIG=~/.ansible.cfg
-# export ANSIBLE_SSH_ARGS="-F ~/.ssh/config.proxy"
 
 export PAGER="less"
 export EDITOR="vim"
@@ -37,5 +32,10 @@ export VISUAL="vim"
 
 export DISABLE_AUTO_TITLE=true
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#export KUBECONFIG=/Users/bradreardon/Projects/DUO/pathwright_provisioning/kubernetes/kubeconfig
+#eval "$(pyenv init -)"
+#pyenv virtualenvwrapper_lazy
+
+export GITHUB_USERNAME=bradreardon
+export PW_PROVISIONING_DIR=/Users/bradreardon/Projects/DUO/pathwright_provisioning
+export DOCKER_BUILDKIT=1
